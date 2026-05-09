@@ -1,110 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calan Bryant | The Pocket</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calan Bryant | The Pocket Dance Conference</title>
+  <meta name="description" content="Calan Bryant is a choreographer, creative director, educator, and founder of The Pocket Dance Conference." />
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family: Arial, sans-serif; background:#080808; color:#f5f5f5; line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; display:block; }
 
+    header {
+      position:sticky; top:0; z-index:1000;
+      background:rgba(0,0,0,.88); backdrop-filter:blur(10px);
+      border-bottom:1px solid #222;
+      padding:18px 7%;
+      display:flex; justify-content:space-between; align-items:center;
+    }
+    .logo { font-weight:800; letter-spacing:2px; text-transform:uppercase; }
+    nav a { margin-left:22px; font-size:14px; color:#ddd; }
+    nav a:hover { color:white; }
+
+    section { padding:90px 7%; }
+    .hero {
+      min-height:88vh;
+      display:flex; align-items:center;
+      background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.88)), url('assets/hero.jpg') center/cover;
+    }
+    .hero-content { max-width:850px; }
+    .eyebrow { color:#aaa; text-transform:uppercase; letter-spacing:3px; font-size:13px; margin-bottom:18px; }
+    h1 { font-size:clamp(48px,9vw,110px); line-height:.95; text-transform:uppercase; }
+    h2 { font-size:clamp(32px,5vw,58px); margin-bottom:20px; text-transform:uppercase; }
+    h3 { margin-bottom:10px; font-size:22px; }
+    p { color:#d4d4d4; max-width:900px; }
+    .buttons { display:flex; gap:14px; flex-wrap:wrap; margin-top:30px; }
+    .btn {
+      padding:14px 22px; border:1px solid white; text-transform:uppercase;
+      font-size:13px; letter-spacing:1px; border-radius:999px;
+    }
+    .btn.primary { background:white; color:black; }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; margin-top:30px; }
+    .card {
+      background:#111; border:1px solid #242424; padding:26px; border-radius:18px;
+    }
+    .pocket {
+      background:linear-gradient(135deg,#111,#1b1b1b,#000);
+      border-top:1px solid #333; border-bottom:1px solid #333;
+    }
+    .media-box {
+      min-height:230px; border:1px dashed #555; border-radius:18px;
+      display:flex; align-items:center; justify-content:center; color:#aaa; text-align:center; padding:20px;
+      background:#101010;
+    }
+    form { display:grid; gap:14px; max-width:760px; margin-top:25px; }
+    input, textarea, select {
+      width:100%; padding:14px; background:#111; color:white;
+      border:1px solid #333; border-radius:10px;
+    }
+    textarea { min-height:130px; }
+    footer { padding:40px 7%; background:#030303; border-top:1px solid #222; color:#aaa; }
+
+    @media(max-width:760px) {
+      header { flex-direction:column; gap:12px; align-items:flex-start; }
+      nav { display:flex; flex-wrap:wrap; gap:12px; }
+      nav a { margin-left:0; }
+      section { padding:70px 6%; }
+    }
+  </style>
+</head>
 <body>
 
 <header>
-  <nav>
-    <img src="logo.PNG" class="logo" alt="Logo">
-
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#media">Media</a></li>
-      <li><a href="#pocket">The Pocket</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="logo">Calan Bryant</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#media">Media</a>
+    <a href="#pocket">The Pocket</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Calan Bryant</h1>
-
-    <p>
-      Choreographer • Creative Director • Educator
-    </p>
-
-    <a href="#contact" class="btn">
-      Book Now
-    </a>
-  </div>
+  <div class="hero-content">
+    <div class="eyebrow">Choreographer • Creative Director • Educator</div>
+    <h1>Movement with purpose. Performance with pocket.</h1>
+    <p>Calan Bryant builds cinematic dance experiences through choreography, education, creative direction, and The Pocket Dance Conference.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#contact">Book Calan</a>
+      <a class="btn" href="#pocket">Explore The Pocket</a>
+      <a class="btn" href="#media">Watch Reel</a>
+    </div>
+  </div>
 </section>
 
-<section class="section" id="about">
-  <h2>About</h2>
+<section id="about">
+  <div class="eyebrow">About Calan</div>
+  <h2>Artist. Educator. Visionary.</h2>
+  <p>Calan Bryant is a choreographer, creative director, performer, and educator focused on developing artists through movement, storytelling, performance quality, and culture. His work bridges professional choreography, youth development, live performance, and immersive dance education.</p>
 
-  <p>
-    Calan Bryant is a choreographer, educator,
-    and creative director focused on developing
-    artists through movement, storytelling,
-    performance, and culture.
-  </p>
+  <div class="grid">
+    <div class="card">
+      <h3>Biography</h3>
+      <p>Long-form biography section for career background, training, credits, and artistic journey.</p>
+    </div>
+    <div class="card">
+      <h3>Teaching Philosophy</h3>
+      <p>Training dancers to understand musicality, intention, performance, confidence, and full-body storytelling.</p>
+    </div>
+    <div class="card">
+      <h3>Resume / CV</h3>
+      <p>Add downloadable PDF links for professional resume, CV, press kit, and booking packet.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section dark" id="services">
-  <h2>Services</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Choreography</h3>
-      <p>Industry choreography and stage production.</p>
-    </div>
-
-    <div class="card">
-      <h3>Masterclasses</h3>
-      <p>Training workshops and educational intensives.</p>
-    </div>
-
-    <div class="card">
-      <h3>Creative Direction</h3>
-      <p>Visual concepts and performance development.</p>
-    </div>
-
-  </div>
+<section id="services">
+  <div class="eyebrow">Services</div>
+  <h2>Creative & Educational Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Choreography</h3><p>Stage, commercial, studio, competition, and performance choreography.</p></div>
+    <div class="card"><h3>Creative Direction</h3><p>Visual concepts, staging, performance identity, and show development.</p></div>
+    <div class="card"><h3>Workshops & Masterclasses</h3><p>High-energy classes focused on movement quality, confidence, and artistry.</p></div>
+    <div class="card"><h3>School Residencies</h3><p>Educational programming for studios, schools, teams, and youth programs.</p></div>
+    <div class="card"><h3>Event Production</h3><p>Support for dance events, conferences, showcases, and live experiences.</p></div>
+  </div>
 </section>
 
-<section class="section" id="media">
-  <h2>Media</h2>
-
-  <p>
-    Performance reels, gallery content,
-    behind-the-scenes footage, and visuals.
-  </p>
+<section id="media">
+  <div class="eyebrow">Media</div>
+  <h2>Reels, Gallery & Visual Storytelling</h2>
+  <div class="grid">
+    <div class="media-box">Performance Reel Embed</div>
+    <div class="media-box">Photo Gallery</div>
+    <div class="media-box">Behind-the-Scenes</div>
+    <div class="media-box">Stage Concepts / Renderings</div>
+  </div>
 </section>
 
-<section class="section pocket" id="pocket">
+<section class="pocket" id="pocket">
+  <div class="eyebrow">The Pocket Dance Conference</div>
+  <h2>A dance experience built for culture, training, and connection.</h2>
+  <p>The Pocket is a youth culture-inspired dance conference created to inspire, educate, and connect dancers through movement, mentorship, faculty training, and immersive performance experiences.</p>
 
-  <img src="logo.PNG" class="pocket-logo">
-
-  <h2>The Pocket Dance Conference</h2>
-
-  <p>
-    A movement experience built to inspire,
-    educate, and connect dancers through
-    artistry, training, and mentorship.
-  </p>
-
+  <div class="grid">
+    <div class="card"><h3>Mission</h3><p>To help dancers find their pocket through artistry, discipline, musicality, and community.</p></div>
+    <div class="card"><h3>Experience</h3><p>Classes, panels, faculty sessions, mentorship, showcases, and recap media.</p></div>
+    <div class="card"><h3>Faculty</h3><p>Add guest artist bios, instructor photos, and specialty class descriptions.</p></div>
+    <div class="card"><h3>Schedule</h3><p>Add conference dates, class blocks, check-in, showcases, and closing events.</p></div>
+    <div class="card"><h3>Registration</h3><p>Add pricing, packages, early bird rates, and registration links.</p></div>
+    <div class="card"><h3>Sponsorship</h3><p>Add sponsorship tiers and a downloadable sponsorship deck.</p></div>
+  </div>
 </section>
 
-<section class="section contact" id="contact">
+<section id="shop">
+  <div class="eyebrow">Coming Soon</div>
+  <h2>Shop & Digital Experiences</h2>
+  <div class="grid">
+    <div class="card"><h3>Merchandise</h3><p>Future branded apparel and event merchandise.</p></div>
+    <div class="card"><h3>Digital Classes</h3><p>Future online workshops and training resources.</p></div>
+    <div class="card"><h3>Mentorship</h3><p>Future mentorship opportunities for dancers and educators.</p></div>
+  </div>
+</section>
 
-  <h2>Contact</h2>
+<section>
+  <div class="eyebrow">Testimonials</div>
+  <h2>What Dancers & Clients Say</h2>
+  <div class="grid">
+    <div class="card"><p>“Calan brings energy, clarity, and purpose into every room.”</p></div>
+    <div class="card"><p>“The training pushed our dancers creatively and professionally.”</p></div>
+    <div class="card"><p>“The Pocket experience is exactly what young artists need.”</p></div>
+  </div>
+</section>
 
-  <p>Email: booking@calanbryant.com</p>
+<section>
+  <div class="eyebrow">FAQ</div>
+  <h2>Common Questions</h2>
+  <div class="grid">
+    <div class="card"><h3>How do I book Calan?</h3><p>Use the booking form below with your date, location, budget, and event details.</p></div>
+    <div class="card"><h3>Who is The Pocket for?</h3><p>Dancers, studios, educators, youth programs, and creative communities.</p></div>
+    <div class="card"><h3>Can sponsors get involved?</h3><p>Yes. Sponsorship inquiries can be submitted through the contact form.</p></div>
+  </div>
+</section>
 
+<section id="contact">
+  <div class="eyebrow">Contact</div>
+  <h2>Booking, Sponsorship & Media Inquiries</h2>
+  <p>Email: booking@calanbryant.com</p>
+
+  <form action="mailto:booking@calanbryant.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <select name="inquiry">
+      <option>General Inquiry</option>
+      <option>Booking Inquiry</option>
+      <option>Sponsorship Inquiry</option>
+      <option>Media / Press Inquiry</option>
+    </select>
+    <input type="text" name="date" placeholder="Event Date">
+    <input type="text" name="location" placeholder="Location">
+    <input type="text" name="budget" placeholder="Budget Range">
+    <textarea name="message" placeholder="Tell us about your project, event, or request."></textarea>
+    <button class="btn primary" type="submit">Submit Inquiry</button>
+  </form>
 </section>
 
 <footer>
-  © 2026 Calan Bryant
+  <p>© 2026 Calan Bryant / The Pocket Dance Conference</p>
+  <p>Instagram • YouTube • TikTok • Newsletter Signup</p>
 </footer>
 
 </body>
