@@ -587,3 +587,50 @@ footer input {
   }
 
 }
+/* ABOUT PAGE */
+
+.about-section {
+  padding-top: 140px;
+  min-height: 100vh;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-content p {
+  margin-bottom: 22px;
+}
+
+.about-cards {
+  margin-top: 35px;
+}
+
+.about-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 480px;
+  height: 640px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    height: auto;
+    max-width: 100%;
+  }
+}
