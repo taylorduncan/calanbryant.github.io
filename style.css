@@ -1044,3 +1044,278 @@ footer input {
   }
 
 }
+
+
+
+
+
+
+/* =========================
+   FULL WEBSITE MOBILE FIX
+   Add to bottom of style.css
+========================= */
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+/* NAV MOBILE FIX */
+@media (max-width: 900px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 20px;
+  }
+
+  .logo {
+    width: 95px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+    padding: 0;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
+
+/* GENERAL PHONE SCALING */
+@media (max-width: 768px) {
+  section,
+  .section,
+  .about-section,
+  .services-section,
+  .contact-section,
+  .booking-section,
+  .credits-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  h1,
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 56px);
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: clamp(32px, 9vw, 42px);
+    line-height: 1.05;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .btn,
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+    padding: 15px 22px;
+  }
+}
+
+/* HOME HERO MOBILE */
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    height: auto;
+    padding: 90px 6% 60px;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 22px auto 0;
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+
+  .hero-image img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .left-image,
+  .right-image {
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+}
+
+/* GRID FIXES */
+@media (max-width: 900px) {
+  .grid,
+  .cards,
+  .media-grid,
+  .services-grid,
+  .credits-grid,
+  .footer-grid,
+  .mosaic-bottom,
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .card,
+  .media-box,
+  .service-card,
+  .credit-card {
+    width: 100%;
+    padding: 26px;
+  }
+}
+
+/* MEDIA PAGE FIX */
+@media (max-width: 768px) {
+  .video-card {
+    min-height: 260px;
+    padding: 24px;
+  }
+
+  .video-card span {
+    font-size: 24px;
+  }
+
+  .video-card::before {
+    width: 54px;
+    height: 54px;
+    font-size: 20px;
+  }
+}
+
+/* ABOUT PAGE FIX */
+@media (max-width: 900px) {
+  .mosaic-top {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .feature-image,
+  .small-image {
+    height: auto;
+  }
+
+  .feature-image img,
+  .small-image img {
+    height: auto;
+  }
+
+  .resume-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* SERVICES PAGE FIX */
+@media (max-width: 900px) {
+  .services-hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .services-image {
+    position: relative;
+    top: auto;
+  }
+
+  .services-image img {
+    height: auto;
+  }
+
+  .booking-wrapper {
+    padding: 28px 20px;
+  }
+}
+
+/* CONTACT PAGE FIX */
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-image img {
+    height: auto;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 16px;
+  }
+}
+
+/* POCKET PAGE FIX */
+@media (max-width: 900px) {
+  .pocket-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .pocket-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  section,
+  .section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .hero {
+    padding-top: 70px;
+  }
+
+  .card,
+  .media-box,
+  .service-card,
+  .credit-card,
+  .booking-wrapper {
+    border-radius: 20px;
+  }
+}
