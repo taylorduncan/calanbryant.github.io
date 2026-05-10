@@ -881,3 +881,94 @@ footer input {
   }
 
 }
+/* SERVICES PAGE */
+
+.services-section,
+.booking-section {
+  padding: 140px 7% 90px;
+}
+
+.services-intro {
+  max-width: 900px;
+  margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.service-card {
+  background: linear-gradient(145deg, #171717, #0b0b0b);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 30px;
+  padding: 38px;
+  min-height: 280px;
+  box-shadow: 0 25px 70px rgba(0,0,0,.35);
+}
+
+.service-card span {
+  color: #7ff4f4;
+  font-weight: 800;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 22px;
+}
+
+.service-card h3 {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.service-card p {
+  line-height: 1.8;
+}
+
+.booking-form {
+  max-width: 1100px;
+}
+
+.booking-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  background: #121212;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 18px;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.booking-form textarea {
+  min-height: 180px;
+  margin-bottom: 28px;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  outline: none;
+  border-color: #7ff4f4;
+  box-shadow: 0 0 0 4px rgba(127,244,244,.1);
+}
+
+@media (max-width: 900px) {
+  .services-grid,
+  .booking-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section,
+  .booking-section {
+    padding: 110px 6% 70px;
+  }
+}
