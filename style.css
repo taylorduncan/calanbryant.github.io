@@ -437,18 +437,25 @@ footer input {
   align-items: center;
 }
 
+/* RIGHT SIDE */
+
 .pocket-image {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* LOGO */
 
 .pocket-image img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 32px;
-  object-fit: cover;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
   display: block;
   margin-left: auto;
-  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,.45));
 }
 
 /* MOBILE */
@@ -457,11 +464,12 @@ footer input {
 
   .pocket-layout {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .pocket-image img {
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 280px;
   }
 
 }
