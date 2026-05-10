@@ -549,3 +549,41 @@ footer input {
   }
 
 }
+/* CONTACT LAYOUT */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.contact-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 430px;
+  height: 640px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
