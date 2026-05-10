@@ -353,3 +353,78 @@ footer input {
   height: 100%;
   border: 0;
 }
+/* MEDIA THUMBNAILS */
+
+.video-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  align-items: end;
+  padding: 34px;
+  text-decoration: none;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s ease;
+}
+
+.video-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top,
+      rgba(0,0,0,.92),
+      rgba(0,0,0,.2));
+}
+
+.video-card span {
+  position: relative;
+  z-index: 2;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.video-card:hover {
+  transform: translateY(-8px);
+}
+
+.video-card::before {
+  content: "▶";
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #7ff4f4;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 900;
+  z-index: 3;
+}
+
+/* THUMBNAIL IMAGES */
+
+.reel-card {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,.1)),
+    url("images/reel-thumbnail.jpg");
+}
+
+.performance-card {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,.1)),
+    url("images/performance-thumbnail.jpg");
+}
+
+.masterclass-card {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,.1)),
+    url("images/masterclass-thumbnail.jpg");
+}
