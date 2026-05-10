@@ -450,12 +450,13 @@ footer input {
 
 .pocket-image img {
   width: 100%;
-  max-width: 420px;
-  height: auto;
-  object-fit: contain;
+  max-width: 480px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 32px;
   display: block;
   margin-left: auto;
-  filter: drop-shadow(0 30px 60px rgba(0,0,0,.45));
+  box-shadow: 0 30px 60px rgba(0,0,0,.45);
 }
 
 /* MOBILE */
