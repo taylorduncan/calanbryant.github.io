@@ -174,64 +174,77 @@
       and estimated budget.
     </p>
 
-    <form class="booking-form">
+<form
+  class="booking-form"
+  action="https://formspree.io/f/xykobvgg"
+  method="POST"
+>
 
-      <div class="form-grid">
+  <div class="form-grid">
 
-        <input
-          type="text"
-          placeholder="Full Name"
-        >
+    <input
+      type="text"
+      name="name"
+      placeholder="Full Name"
+    >
 
-        <input
-          type="email"
-          placeholder="Email Address"
-        >
+    <input
+      type="email"
+      name="email"
+      placeholder="Email Address"
+    >
 
-        <input
-          type="text"
-          placeholder="Project / Organization"
-        >
+    <input
+      type="text"
+      name="organization"
+      placeholder="Project / Organization"
+    >
 
-        <input
-          type="text"
-          placeholder="Service Needed"
-        >
+    <input
+      type="text"
+      name="service"
+      placeholder="Service Needed"
+    >
 
-        <input
-          type="text"
-          placeholder="Preferred Date"
-        >
+    <input
+      type="text"
+      name="date"
+      placeholder="Preferred Date"
+    >
 
-        <input
-          type="text"
-          placeholder="Location"
-        >
+    <input
+      type="text"
+      name="location"
+      placeholder="Location"
+    >
 
-        <input
-          type="text"
-          placeholder="Estimated Budget"
-        >
+    <input
+      type="text"
+      name="budget"
+      placeholder="Estimated Budget"
+    >
 
-        <input
-          type="text"
-          placeholder="Audience / Dancer Level"
-        >
+    <input
+      type="text"
+      name="audience"
+      placeholder="Audience / Dancer Level"
+    >
 
-      </div>
+  </div>
 
-      <textarea
-        placeholder="Tell us about your project, event, goals, timeline, and important details."
-      ></textarea>
+  <textarea
+    name="details"
+    placeholder="Tell us about your project, event, goals, timeline, and important details."
+  ></textarea>
 
-      <button
-        class="btn primary"
-        type="submit"
-      >
-        Submit Booking Inquiry
-      </button>
+  <button
+    class="btn primary"
+    type="submit"
+  >
+    Submit Booking Inquiry
+  </button>
 
-    </form>
+</form>
 
   </div>
 
