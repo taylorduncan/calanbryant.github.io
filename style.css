@@ -1281,6 +1281,47 @@ body {
     padding-top: 145px !important;
   }
 }
+/* =========================
+   MOBILE HERO CUT-OFF FIX
+========================= */
+
+@media (max-width: 900px) {
+
+  body {
+    padding-top: 0 !important;
+  }
+
+  .site-header,
+  header {
+    position: sticky !important;
+    top: 0 !important;
+  }
+
+  .hero {
+    min-height: 100svh !important;
+    padding-top: 40px !important;
+    padding-bottom: 90px !important;
+  }
+
+  .hero-content {
+    padding-top: 20px;
+  }
+
+  .hero-video-bg video {
+    object-fit: cover;
+    object-position: center top;
+    transform: translate(-50%, -50%) scale(1.03) !important;
+  }
+
+}
+
+
+
+
+
+
+
+
 
 
 
