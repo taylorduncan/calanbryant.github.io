@@ -45,7 +45,49 @@ nav a{
   position: relative;
   overflow: hidden;
 }
+/* HERO TITLE ANIMATION */
 
+.hero h1 {
+  animation:
+    blurReveal 1.5s ease forwards,
+    floatText 5s ease-in-out infinite 1.5s;
+
+  opacity: 0;
+}
+
+/* BLUR REVEAL */
+@keyframes blurReveal {
+
+  from {
+    opacity: 0;
+    filter: blur(14px);
+    transform: scale(1.03);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+
+}
+
+/* FLOATING EFFECT */
+@keyframes floatText {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
 /* BACKGROUND IMAGE */
 
 .hero-bg {
