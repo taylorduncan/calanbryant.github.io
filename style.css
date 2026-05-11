@@ -1574,14 +1574,19 @@ img, video, iframe {
 }
 
 /* EXTRA SMALL PHONES */
-@media (max-width: 480px) {
-  nav ul {
-    gap: 10px;
+ @media (max-width: 480px) {
+
+  .top-name {
+    font-size: 38px !important;
+    letter-spacing: 0.16em !important;
   }
 
-  nav a {
-    font-size: 13px;
+  .main-nav {
+    gap: 16px !important;
+    padding: 18px 5% !important;
   }
+
+}
 
   section,
   .section {
