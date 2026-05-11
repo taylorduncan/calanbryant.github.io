@@ -1390,6 +1390,61 @@ body {
 
   border: 1px solid rgba(255,255,255,.08);
 }
+/* =========================
+   SERVICES PREVIEW BACKGROUND
+========================= */
+
+.services-preview-section {
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.78),
+      rgba(0,0,0,.88)
+    ),
+    url("images/aboutbackground.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+/* GLASS EFFECT CARDS */
+
+.services-preview-section .card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(18,18,18,.78),
+      rgba(8,8,8,.78)
+    );
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
