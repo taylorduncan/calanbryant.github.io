@@ -1431,7 +1431,55 @@ body {
 
   border: 1px solid rgba(255,255,255,.08);
 }
+/* =========================
+   FINAL MOBILE VIDEO FIX
+========================= */
 
+@media (max-width: 900px) {
+
+  header,
+  .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 99999 !important;
+  }
+
+  body {
+    padding-top: 0 !important;
+  }
+
+  .hero {
+    min-height: 100svh !important;
+    padding: 40px 6% 90px !important;
+  }
+
+  .hero-video-bg {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+  }
+
+  .hero-video-bg video {
+    display: block !important;
+    opacity: 1 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    transform: translate(-50%, -50%) scale(1.08) !important;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.78)
+    ) !important;
+  }
+
+}
 
 
 
