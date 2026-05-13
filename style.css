@@ -1480,6 +1480,89 @@ body {
   }
 
 }
+/* =========================
+   SUMMER CLASS PROMO
+========================= */
+
+.services-image {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-image img {
+  width: 100%;
+  max-width: 560px;
+
+  border-radius: 32px;
+
+  object-fit: cover;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.45);
+}
+
+/* BUTTON */
+
+.summer-class-btn {
+  position: absolute;
+
+  bottom: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: #7ff4f4;
+  color: black;
+
+  text-decoration: none;
+
+  padding: 16px 30px;
+
+  border-radius: 999px;
+
+  font-weight: 800;
+
+  font-size: 15px;
+
+  white-space: nowrap;
+
+  transition: .3s ease;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.35);
+}
+
+.summer-class-btn:hover {
+  background: white;
+
+  transform:
+    translateX(-50%)
+    translateY(-3px);
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .services-image {
+    margin-top: 30px;
+  }
+
+  .summer-class-btn {
+    width: 82%;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
 
 
 

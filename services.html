@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Calan Bryant</title>
-  <link rel="stylesheet" href="style.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Services | Calan Bryant
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
 </head>
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header class="site-header">
 
   <!-- TOP BRAND BAR -->
+
   <div class="top-name-bar">
 
     <h1 class="top-name">
@@ -22,14 +40,21 @@
   </div>
 
   <!-- NAVIGATION -->
+
   <nav class="main-nav">
 
     <a href="index.html">Home</a>
+
     <a href="about.html">About</a>
+
     <a href="services.html">Services</a>
+
     <a href="media.html">Media</a>
+
     <a href="pocket.html">The Pocket</a>
+
     <a href="shop.html">Shop</a>
+
     <a href="contact.html">Contact</a>
 
   </nav>
@@ -42,12 +67,15 @@
 
 <section class="services-section services-background">
 
-  <!-- BACKGROUND OVERLAY -->
+  <!-- OVERLAY -->
+
   <div class="services-overlay"></div>
 
   <div class="services-hero">
 
-    <!-- LEFT SIDE -->
+    <!-- =========================
+         LEFT SIDE
+    ========================= -->
 
     <div class="services-left">
 
@@ -60,11 +88,18 @@
       </h2>
 
       <p class="services-intro">
-        Calan Bryant offers choreography, creative direction,
-        workshops, educational programming, and event production
-        experiences designed for artists, studios, schools,
-        tours, brands, and live entertainment.
+
+        Calan Bryant offers choreography,
+        creative direction, workshops,
+        educational programming,
+        and event production experiences
+        designed for artists, studios,
+        schools, tours, brands,
+        and live entertainment.
+
       </p>
+
+      <!-- SERVICES GRID -->
 
       <div class="services-grid">
 
@@ -77,8 +112,9 @@
           </h3>
 
           <p>
-            Stage, television, tour, commercial,
-            competition, film, and live-show choreography.
+            Stage, television, tour,
+            commercial, competition,
+            film, and live-show choreography.
           </p>
 
         </div>
@@ -92,8 +128,10 @@
           </h3>
 
           <p>
-            Performance concepts, visual storytelling,
-            artist development, and show flow.
+            Performance concepts,
+            visual storytelling,
+            artist development,
+            and show flow.
           </p>
 
         </div>
@@ -107,8 +145,9 @@
           </h3>
 
           <p>
-            Performance quality, confidence,
-            musicality, movement training,
+            Performance quality,
+            confidence, musicality,
+            movement training,
             and industry preparation.
           </p>
 
@@ -123,8 +162,10 @@
           </h3>
 
           <p>
-            School residencies, studio intensives,
-            youth development, and curriculum-based training.
+            School residencies,
+            studio intensives,
+            youth development,
+            and curriculum-based training.
           </p>
 
         </div>
@@ -149,6 +190,26 @@
 
     </div>
 
+    <!-- =========================
+         RIGHT SIDE IMAGE
+    ========================= -->
+
+    <div class="services-image">
+
+      <img
+        src="images/1o1.jpg"
+        alt="1 on 1 Summer Classes"
+      >
+
+      <a
+        href="contact.html"
+        class="summer-class-btn"
+      >
+        Book Summer Classes
+      </a>
+
+    </div>
+
   </div>
 
 </section>
@@ -170,86 +231,92 @@
     </h2>
 
     <p class="services-intro">
-      Submit a booking request with your project details,
-      preferred date, location, audience level,
+
+      Submit a booking request with your
+      project details, preferred date,
+      location, audience level,
       and estimated budget.
+
     </p>
 
-<form
-  class="booking-form"
-  action="https://formspree.io/f/xykobvgg"
-  method="POST"
->
+    <!-- FORM -->
 
-  <div class="form-grid">
-
-    <input
-      type="text"
-      name="name"
-      placeholder="Full Name"
+    <form
+      class="booking-form"
+      action="https://formspree.io/f/xykobvgg"
+      method="POST"
     >
 
-    <input
-      type="email"
-      name="email"
-      placeholder="Email Address"
-    >
+      <div class="form-grid">
 
-    <input
-      type="text"
-      name="organization"
-      placeholder="Project / Organization"
-    >
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name"
+        >
 
-    <input
-      type="text"
-      name="service"
-      placeholder="Service Needed"
-    >
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+        >
 
-    <input
-      type="text"
-      name="date"
-      placeholder="Preferred Date"
-    >
+        <input
+          type="text"
+          name="organization"
+          placeholder="Project / Organization"
+        >
 
-    <input
-      type="text"
-      name="location"
-      placeholder="Location"
-    >
+        <input
+          type="text"
+          name="service"
+          placeholder="Service Needed"
+        >
 
-    <input
-      type="text"
-      name="budget"
-      placeholder="Estimated Budget"
-    >
+        <input
+          type="text"
+          name="date"
+          placeholder="Preferred Date"
+        >
 
-    <input
-      type="text"
-      name="audience"
-      placeholder="Audience / Dancer Level"
-    >
+        <input
+          type="text"
+          name="location"
+          placeholder="Location"
+        >
 
-  </div>
+        <input
+          type="text"
+          name="budget"
+          placeholder="Estimated Budget"
+        >
 
-  <textarea
-    name="details"
-    placeholder="Tell us about your project, event, goals, timeline, and important details."
-  ></textarea>
+        <input
+          type="text"
+          name="audience"
+          placeholder="Audience / Dancer Level"
+        >
 
-  <button
-    class="btn primary"
-    type="submit"
-  >
-    Submit Booking Inquiry
-  </button>
+      </div>
 
-</form>
+      <textarea
+        name="details"
+        placeholder="Tell us about your project, event, goals, timeline, and important details."
+      ></textarea>
+
+      <button
+        class="btn primary"
+        type="submit"
+      >
+        Submit Booking Inquiry
+      </button>
+
+    </form>
 
   </div>
 
 </section>
 
 </body>
+
 </html>
