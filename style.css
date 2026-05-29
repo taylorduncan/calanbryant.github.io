@@ -1603,6 +1603,8 @@ body {
 
 
 
+
+
 /* =========================
    FULL WEBSITE MOBILE FIX
    Add to bottom of style.css
@@ -1809,8 +1811,77 @@ img, video, iframe {
   }
 }
 
-/* CONTACT PAGE FIX */
+/* GOOGLE CALENDAR SCHEDULER */
+
+#google-calendar-button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.book-btn {
+  border-radius: 12px;
+}
+
+.scheduler-section {
+  margin-top: 50px;
+}
+
+.scheduler-title {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+/* MOBILE RESPONSIVE FIXES */
+
 @media (max-width: 900px) {
+
+  /* ABOUT PAGE */
+
+  .mosaic-top {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .feature-image,
+  .small-image {
+    height: auto;
+  }
+
+  .feature-image img,
+  .small-image img {
+    height: auto;
+  }
+
+  .resume-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* SERVICES PAGE */
+
+  .services-hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .services-image {
+    position: relative;
+    top: auto;
+  }
+
+  .services-image img {
+    height: auto;
+  }
+
+  .booking-wrapper {
+    padding: 28px 20px;
+  }
+
+  /* CONTACT PAGE */
+
   .contact-layout {
     grid-template-columns: 1fr;
     gap: 35px;
@@ -1829,7 +1900,18 @@ img, video, iframe {
   button {
     font-size: 16px;
   }
+
+  /* GOOGLE BUTTON MOBILE ALIGNMENT */
+
+  #google-calendar-button {
+    justify-content: center;
+  }
+
 }
+
+
+
+
 
 /* POCKET PAGE FIX */
 @media (max-width: 900px) {

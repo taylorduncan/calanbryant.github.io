@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Contact | Calan Bryant</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Calendar Scheduler Styles -->
+  <link
+    href="https://calendar.google.com/calendar/scheduling-button-script.css"
+    rel="stylesheet">
+
 </head>
+
 <body>
 
 <header class="site-header">
@@ -54,64 +63,74 @@
         Email: calanbryant@gmail.com
       </p>
 
-    <form
-  class="contact-form"
-  action="https://formspree.io/f/xykobvgg"
-  method="POST"
->
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/xykobvgg"
+        method="POST"
+      >
 
-  <div class="form-grid">
+        <div class="form-grid">
 
-    <input
-      type="text"
-      name="name"
-      placeholder="Full Name"
-      required
-    >
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+          >
 
-    <input
-      type="email"
-      name="email"
-      placeholder="Email Address"
-      required
-    >
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          >
 
-    <input
-      type="text"
-      name="event_date"
-      placeholder="Event Date"
-    >
+          <input
+            type="text"
+            name="event_date"
+            placeholder="Event Date"
+          >
 
-    <input
-      type="text"
-      name="location"
-      placeholder="Location"
-    >
+          <input
+            type="text"
+            name="location"
+            placeholder="Location"
+          >
 
-  </div>
+        </div>
 
-  <textarea
-    name="details"
-    placeholder="Tell us about your event, project, workshop, or booking inquiry"
-    required
-  ></textarea>
+        <textarea
+          name="details"
+          placeholder="Tell us about your event, project, workshop, or booking inquiry"
+          required
+        ></textarea>
 
-  <!-- OPTIONAL SUCCESS REDIRECT -->
+        <!-- SUCCESS REDIRECT -->
+        <input
+          type="hidden"
+          name="_next"
+          value="https://taylorduncan.github.io/calanbryant.github.io/contact.html"
+        >
 
-  <input
-    type="hidden"
-    name="_next"
-    value="https://taylorduncan.github.io/calanbryant.github.io/contact.html"
-  >
+        <button
+          class="btn primary"
+          type="submit"
+        >
+          Submit Inquiry
+        </button>
 
-  <button
-    class="btn primary"
-    type="submit"
-  >
-    Submit Inquiry
-  </button>
+      </form>
 
-</form>
+      <!-- GOOGLE MEET SCHEDULER -->
+      <div class="scheduler-section">
+
+        <h3 class="scheduler-title">
+          Schedule a Google Meet Call
+        </h3>
+
+        <div id="google-calendar-button"></div>
+
+      </div>
 
     </div>
 
@@ -124,5 +143,28 @@
 
 </section>
 
+<!-- Google Calendar Scheduler Script -->
+<script
+  src="https://calendar.google.com/calendar/scheduling-button-script.js"
+  async>
+</script>
+
+<script>
+window.addEventListener('load', function () {
+
+  calendar.schedulingButton.load({
+
+    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Fy-qOKFKhooenDNn_7BfA47tjS3K5wWYrE8J352ulfvWPAjT1-MN0Jcl5nTG48_jrfZhdmBP3?gv=true',
+
+    color: '#039BE5',
+
+    label: 'Book a Google Meet Call',
+
+    target: document.getElementById('google-calendar-button'),
+
+  });
+
+});
+</script>
 </body>
 </html>
