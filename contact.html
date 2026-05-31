@@ -20,18 +20,13 @@
 
 <header class="site-header">
 
-  <!-- TOP BRAND BAR -->
   <div class="top-name-bar">
-
     <h1 class="top-name">
       CALAN BRYANT
     </h1>
-
   </div>
 
-  <!-- NAVIGATION -->
   <nav class="main-nav">
-
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -39,7 +34,6 @@
     <a href="pocket.html">The Pocket</a>
     <a href="shop.html">Shop</a>
     <a href="contact.html">Contact</a>
-
   </nav>
 
 </header>
@@ -48,7 +42,6 @@
 
   <div class="contact-layout">
 
-    <!-- LEFT SIDE -->
     <div class="contact-content">
 
       <div class="eyebrow contact-eyebrow">
@@ -105,7 +98,6 @@
           required
         ></textarea>
 
-        <!-- SUCCESS REDIRECT -->
         <input
           type="hidden"
           name="_next"
@@ -121,7 +113,6 @@
 
       </form>
 
-      <!-- GOOGLE MEET SCHEDULER -->
       <div class="scheduler-section">
 
         <h3 class="scheduler-title">
@@ -134,7 +125,6 @@
 
     </div>
 
-    <!-- RIGHT SIDE IMAGE -->
     <div class="contact-image">
       <img src="images/contact.jpg" alt="Calan Bryant">
     </div>
@@ -143,20 +133,18 @@
 
 </section>
 
-<!-- Google Calendar Scheduler Button -->
-<div id="google-calendar-button"></div>
-
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 
 <script>
   window.addEventListener('load', function () {
     calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Fy-qOKFKhooenDNn_7BfA47tjS3K5wWYrE8J352ulfvWPAjT1-MN0Jcl5nTG48_jrfZhdmBP3?gv=true',
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0pjWABkuGHPcDHtqnVlY-n0fgnsasSelpl7PHiFsrFFQBj1CPD9ZDdzsRdy72a91Uy8iFkkeyX?gv=true',
       color: '#039BE5',
       label: 'Book a Google Meet Call',
-      target: document.getElementById('google-calendar-button'),
+      target: document.getElementById('google-calendar-button')
     });
   });
 </script>
+
 </body>
 </html>
