@@ -2236,6 +2236,7 @@ img, video, iframe {
 .cb-project-one { --project-image: url("images/reel-thumbnail.jpg"), #171717; }
 .cb-project-two { --project-image: url("images/masterclass-thumbnail.jpg"), #171717; }
 .cb-project-three { --project-image: url("images/jethumbnail.jpg"), #171717; }
+.cb-project-four { --project-image: url("images/jethumbnail.jpg"), #171717; }
 .cb-project-four{
     --project-image:
         url("./images/urbanhonors.JPG"),
