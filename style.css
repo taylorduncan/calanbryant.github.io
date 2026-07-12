@@ -2234,9 +2234,9 @@ img, video, iframe {
 .cb-project:hover::after { opacity: .72; }
 
 .cb-project-one { --project-image: url("images/reel-thumbnail.jpg"), #171717; }
-.cb-project-two { --project-image: url("images/performance-thumbnail.jpg"), #171717; }
+.cb-project-two { --project-image: url("images/masterclass-thumbnail.jpg"), #171717; }
 .cb-project-three { --project-image: url("images/jethumbnail.jpg"), #171717; }
-.cb-project-four { --project-image: url("images/masterclass-thumbnail.jpg"), #171717; }
+.cb-project-four { --project-image: url("images/urbanhonors.jpg"), #171717; }
 
 .cb-project-copy {
   position: absolute;
