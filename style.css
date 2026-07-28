@@ -2045,32 +2045,53 @@ img, video, iframe {
   color: var(--cb-accent) !important;
 }
 
-.cb-hero {
-  position: relative;
-  min-height: 100svh;
-  padding: 0 6.5% 7vh;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  border-bottom: 1px solid var(--cb-line);
-}
+.cb-hero{
 
-.cb-hero-media,
-.cb-hero-shade{
-    background:
-        linear-gradient(
-            90deg,
-            rgba(255,255,255,.88),
-            rgba(255,255,255,.25),
-            rgba(255,255,255,0)
-        );
-}
+    display:grid;
 
-.cb-hero-media video {
-  height: 100%;
-  object-fit: cover;
-  object-position: center 28%;
-  filter: grayscale(1) contrast(1.08) brightness(.76);
+    grid-template-columns:55% 45%;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:
+
+        140px
+        6%
+        80px;
+
+    gap:70px;
+
+    background:#f8f7f4;
+
+}
+.cb-hero-media{
+
+    height:620px;
+
+    overflow:hidden;
+
+}
+.cb-hero-description{
+
+    max-width:540px;
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:42px;
+
+}
+.cb-hero-media video{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
 }
 
 .cb-hero-shade {
@@ -2079,10 +2100,14 @@ img, video, iframe {
     linear-gradient(0deg, rgba(0,0,0,.92) 0%, transparent 48%);
 }
 
-.cb-hero-copy {
-  position: relative;
-  z-index: 3;
-  width: min(880px, 78vw);
+.cb-hero-copy{
+
+    max-width:650px;
+
+    align-self:start;
+
+    margin-top:20px;
+
 }
 
 .cb-kicker {
@@ -2094,25 +2119,29 @@ img, video, iframe {
   line-height: 1.5 !important;
 }
 
-.cb-hero h1 {
-  margin: 18px 0 26px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: clamp(74px, 10.2vw, 168px) !important;
-  font-weight: 700;
-  line-height: .78 !important;
-  letter-spacing: -.025em;
-  text-transform: uppercase;
-  max-width: none;
-  animation: none !important;
-  opacity: 1 !important;
+.cb-hero h1{
+
+    font-size:clamp(6rem,9vw,9rem);
+
+    line-height:.86;
+
+    margin:
+
+        18px
+        0
+        28px;
+
+}
+
+.cb-hero h1 span{
+
+    display:block;
+
 }
 
 .cb-hero h1 span {
   display: block;
 }
-
-.cb-hero h1 span:nth-child(2) { margin-left: 7vw; }
-.cb-hero h1 span:nth-child(3) { margin-left: 2vw; color: transparent; -webkit-text-stroke: 1px var(--cb-ivory); }
 
 .cb-hero-actions {
   display: flex;
@@ -2162,19 +2191,7 @@ img, video, iframe {
 
 .cb-text-link:hover { border-color: var(--cb-accent); color: var(--cb-accent); }
 
-.cb-hero-index {
-  position: absolute;
-  z-index: 4;
-  right: 3.5%;
-  top: 28%;
-  bottom: 12%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 9px;
-  letter-spacing: .12em;
-}
+
 
 .cb-hero-index i {
   display: block;
