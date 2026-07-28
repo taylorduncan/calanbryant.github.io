@@ -2623,3 +2623,147 @@ body.cb-home{
   .cb-mini-gallery { grid-template-columns: 1fr 1fr; }
   .cb-mini-gallery img:last-child { display: none; }
 }
+
+
+/* =========================================================
+   FINAL HEADER VISIBILITY + FREEZE OVERRIDE
+   Keep this block at the very bottom of style.css.
+========================================================= */
+
+body.cb-home {
+  padding-top: 92px !important;
+}
+
+body.cb-home .cb-header {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: 0 !important;
+  width: 100% !important;
+  min-height: 92px !important;
+  height: 92px !important;
+  z-index: 2147483647 !important;
+
+  display: grid !important;
+  grid-template-columns: 180px minmax(0, 1fr) 180px !important;
+  align-items: center !important;
+
+  padding: 0 4.5% !important;
+  margin: 0 !important;
+
+  background: #000000 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  border-bottom: 1px solid rgba(255,255,255,.14) !important;
+  box-shadow: 0 2px 18px rgba(0,0,0,.18) !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Logo */
+body.cb-home .cb-header .cb-wordmark,
+body.cb-home .cb-header .cb-wordmark:link,
+body.cb-home .cb-header .cb-wordmark:visited,
+body.cb-home .cb-header .cb-wordmark span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: none !important;
+}
+
+/* Main navigation */
+body.cb-home .cb-header .cb-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: clamp(22px, 3vw, 48px) !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+body.cb-home .cb-header .cb-nav a,
+body.cb-home .cb-header .cb-nav a:link,
+body.cb-home .cb-header .cb-nav a:visited {
+  display: inline-block !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  font-family: "Manrope", Arial, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: .20em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+body.cb-home .cb-header .cb-nav a:hover,
+body.cb-home .cb-header .cb-nav a:focus-visible {
+  color: #c69a52 !important;
+}
+
+/* Booking link */
+body.cb-home .cb-header .cb-book-link,
+body.cb-home .cb-header .cb-book-link:link,
+body.cb-home .cb-header .cb-book-link:visited {
+  justify-self: end !important;
+  color: #c69a52 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  white-space: nowrap !important;
+}
+
+/* Ensure the hero starts directly below the fixed header. */
+body.cb-home .cb-hero {
+  margin-top: 0 !important;
+}
+
+/* Tablet/mobile header: remain fixed and readable. */
+@media (max-width: 780px) {
+  body.cb-home {
+    padding-top: 142px !important;
+  }
+
+  body.cb-home .cb-header {
+    position: fixed !important;
+    height: auto !important;
+    min-height: 142px !important;
+    grid-template-columns: 1fr auto !important;
+    align-content: center !important;
+    padding: 18px 6% !important;
+  }
+
+  body.cb-home .cb-header .cb-nav {
+    grid-column: 1 / -1 !important;
+    order: 3 !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    gap: 14px 20px !important;
+    margin-top: 18px !important;
+  }
+
+  body.cb-home .cb-header .cb-book-link {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body.cb-home .cb-header .cb-nav a,
+  body.cb-home .cb-header .cb-nav a:link,
+  body.cb-home .cb-header .cb-nav a:visited {
+    font-size: 9px !important;
+  }
+}
