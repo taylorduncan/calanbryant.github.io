@@ -3726,7 +3726,12 @@ body.cb-home button {
 }
 
 .cb-work .cb-kicker {
-    color: #b68b42 !important;
+     color:#111111 !important;
+    font-family:"Manrope",sans-serif;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-transform:uppercase;
 }
 
 .cb-work h2,
@@ -3740,7 +3745,8 @@ body.cb-home button {
 }
 
 .cb-work .cb-text-link:hover {
-    color: #b68b42 !important;
+    color: #111111!important;
+  
 }
 
 /* FINAL SELECTED WORK HEADING FIX */
