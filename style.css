@@ -2687,63 +2687,85 @@ font-size:42px;
   line-height: 1.8 !important;
 }
 
-.cb-services-links {
-  width: 100%;
-  max-width: 760px;
+/* ==========================
+   SERVICES LIST
+========================== */
+
+.cb-services-links{
+    margin-top:50px;
 }
 
-.cb-services-links a {
-  display: grid;
-  grid-template-columns: 42px 1fr auto;
-  align-items: center;
+.cb-services-links a{
 
-  min-height: 64px;
+    display:grid;
+    grid-template-columns:45px 1fr auto;
 
-  color: #111;
-  text-decoration: none;
+    align-items:center;
 
-  border-top: 1px solid rgba(0,0,0,.10);
+    padding:22px 0;
 
-  transition:
-    color .25s ease,
-    padding-left .25s ease;
+    border-top:1px solid rgba(0,0,0,.08);
+
+    color:#111;
+
+    text-decoration:none;
+
+    transition:all .35s ease;
+
 }
 
-.cb-services-links a:last-child {
-  border-bottom: 1px solid rgba(0,0,0,.10);
+.cb-services-links a:last-child{
+    border-bottom:1px solid rgba(0,0,0,.08);
 }
 
-.cb-services-links a span {
-  color: var(--cb-accent);
+.cb-services-links span{
 
-  font-family: "Manrope", sans-serif;
-  font-size: 9px;
-  letter-spacing: .12em;
+    font-size:10px;
+
+    color:#9a7a37;
+
+    letter-spacing:.15em;
+
+    text-transform:uppercase;
+
 }
 
-.cb-services-links a strong {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: clamp(25px, 2.3vw, 38px);
-  font-weight: 500;
-  line-height: 1;
+.cb-services-links strong{
 
-  text-transform: uppercase;
+    font-family:"Barlow Condensed",sans-serif;
+
+    font-size:42px;
+
+    font-weight:600;
+
+    letter-spacing:-.02em;
+
+    text-transform:uppercase;
+
 }
 
-.cb-services-links a i {
-  font-size: 14px;
-  font-style: normal;
+.cb-services-links i{
 
-  transition: transform .25s ease;
+    font-style:normal;
+
+    font-size:18px;
+
+    transition:.3s ease;
+
 }
 
-.cb-services-links a:hover {
-  color: var(--cb-accent);
-  padding-left: 8px;
+.cb-services-links a:hover{
+
+    color:#9a7a37;
+
+    padding-left:10px;
+
 }
 
-.cb-services-links a:hover i {
-  transform: translate(4px, -4px);
+.cb-services-links a:hover i{
+
+    transform:translateX(8px);
+
 }
 
 .cb-services-button {
@@ -2754,21 +2776,19 @@ font-size:42px;
 /* RIGHT IMAGE */
 
 .cb-services-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display:flex;
+    align-items:center;
+    justify-content:center;
 
-  padding: 46px 46px 46px 18px;
+    padding:60px;
 
-  background: #efede8;
-
-  border-left: 1px solid var(--cb-line);
+    background:#f3f1ec;
 }
 
 .cb-services-image-frame {
   width: 100%;
-  max-width: 700px;
-  height: 700px;
+  max-width: 500px;
+  height: 500px;
 
   overflow: hidden;
 
