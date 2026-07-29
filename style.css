@@ -3629,3 +3629,23 @@ body.cb-home button {
 .cb-work .cb-text-link:hover {
     color: #b68b42 !important;
 }
+
+/* FINAL SELECTED WORK HEADING FIX */
+
+body.cb-home #selected-work {
+  background: #000000 !important;
+}
+
+body.cb-home #selected-work .cb-work-kicker {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+body.cb-home #selected-work .cb-work-title {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-weight: 700 !important;
+}
