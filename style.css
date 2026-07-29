@@ -2902,6 +2902,7 @@ font-size:42px;
 
 .cb-editorial-row blockquote {
   margin: 0;
+   color:#ffffff !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2913,7 +2914,7 @@ font-size:42px;
 
 .cb-editorial-row cite {
   margin-top: 30px;
-  color: var(--cb-accent);
+  color:#C9B17A !important;
   font-family: "Manrope", sans-serif;
   font-size: 9px;
   font-style: normal;
