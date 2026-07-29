@@ -2249,73 +2249,196 @@ body.cb-home{
   text-transform: uppercase;
   max-width: 900px;
 }
+/* ===========================================
+   SELECTED WORK
+=========================================== */
 
-.cb-project-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--cb-line);
-  border-left: 1px solid var(--cb-line);
+.cb-project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+    margin-top:60px;
+
 }
 
-.cb-project {
-  position: relative;
-  min-height: 480px;
-  overflow: hidden;
-  border-right: 1px solid var(--cb-line);
-  border-bottom: 1px solid var(--cb-line);
-  background-size: cover;
-  background-position: center;
-  text-decoration: none;
+.cb-project{
+
+    position:relative;
+
+    height:620px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    background:#111;
+
+    transition:.45s ease;
+
 }
 
-.cb-project::before,
-.cb-project::after{
-    background:
-    linear-gradient(
+
+
+.cb-project img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .8s ease;
+
+}
+
+.cb-project-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
         to top,
-        rgba(255,255,255,.88),
-        rgba(255,255,255,0)
+        rgba(0,0,0,.88),
+        rgba(0,0,0,.05) 55%
     );
+
 }
 
-.cb-project::before { background: var(--project-image); background-size: cover; background-position: center; transform: scale(1.01); }
-.cb-project::after { background: linear-gradient(to top, rgba(0,0,0,.95), rgba(0,0,0,.08) 68%); }
-.cb-project:hover::before { transform: scale(1.055); }
-.cb-project:hover::after { opacity: .72; }
+.cb-project-copy{
 
-.cb-project-one { --project-image: url("images/reel-thumbnail.jpg"), #171717; }
-.cb-project-two { --project-image: url("images/masterclass-thumbnail.jpg"), #171717; }
-.cb-project-three { --project-image: url("images/jethumbnail.jpg"), #171717; }
-.cb-project-four { --project-image: url("images/jethumbnail.jpg"), #171717; }
-.cb-project-four{
-    --project-image:
-        url("./images/urbanhonors.JPG"),
-        #171717;
+    position:absolute;
+
+    left:35px;
+
+    right:35px;
+
+    bottom:35px;
+
+    z-index:5;
+
 }
 
-.cb-project-copy {
-  position: absolute;
-  z-index: 3;
-  left: 26px;
-  right: 26px;
-  bottom: 28px;
+.cb-project-copy p{
+
+    color:#C9B17A;
+
+    font-size:11px;
+
+    letter-spacing:.22em;
+
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+
 }
 
-.cb-project-copy p,
-.cb-project-copy span {
-  color: #c6c2ba !important;
-  text-transform: uppercase;
-  letter-spacing: .15em;
-  font-size: 9px !important;
+.cb-project-copy h3{
+
+    color:#fff;
+
+    font-size:52px;
+
+    line-height:.9;
+
+    margin-bottom:18px;
+
+    font-family:"Barlow Condensed",sans-serif;
+
+    text-transform:uppercase;
+
 }
 
-.cb-project-copy h3 {
-  margin: 7px 0 15px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: clamp(32px, 3vw, 52px) !important;
-  line-height: .9;
-  text-transform: uppercase;
+.cb-project-copy span{
+
+    color:white;
+
+    font-size:12px;
+
+    letter-spacing:.15em;
+
+    text-transform:uppercase;
+
 }
+
+.cb-project:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.cb-project:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.cb-project:hover .cb-project-overlay{
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.72),
+        rgba(0,0,0,0)
+    );
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media(max-width:1200px){
+
+.cb-project-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.cb-project-grid{
+
+grid-template-columns:1fr;
+
+gap:24px;
+
+}
+
+.cb-project{
+
+height:500px;
+
+}
+
+.cb-project-copy{
+
+left:24px;
+right:24px;
+bottom:24px;
+
+}
+
+.cb-project-copy h3{
+
+font-size:42px;
+
+}
+
+}
+
 
 .cb-about-feature {
   display: grid;
