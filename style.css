@@ -2786,25 +2786,29 @@ font-size:42px;
 }
 
 .cb-services-image-frame {
-  width: 100%;
-  max-width: 500px;
-  height: 500px;
+     width:100%;
+    max-width:480px;
+    height:620px;
 
-  overflow: hidden;
+    overflow:hidden;
 
-  background: #fff;
+    background:#fff;
 
-  box-shadow: 0 24px 65px rgba(0,0,0,.12);
+    box-shadow:0 24px 65px rgba(0,0,0,.12);
 }
 
 .cb-services-image-frame img {
-  width: 100%;
-  height: 100%;
+  width:100%;
+    height:100%;
 
-  object-fit: contain;
-  object-position: center;
+    object-fit:cover;
 
-  background: #fff;
+    /* Adjust these two values until it looks right */
+    object-position:48% top;
+
+    transform:scale(1.22);
+
+    transition:transform .4s ease;
 }
 @media (max-width: 1050px) {
 
